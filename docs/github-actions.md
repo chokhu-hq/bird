@@ -1,6 +1,6 @@
 # Deploying from GitHub Actions
 
-The `aelpxy/bird` action installs the `bird` cli and runs `bird deploy` in your repository, so every
+The `chokhu-hq/bird` action installs the `bird` cli and runs `bird deploy` in your repository, so every
 push builds and deploys it like you would from your own machine.
 
 ## Set up the server once
@@ -8,7 +8,7 @@ push builds and deploys it like you would from your own machine.
 The runner reaches birdd over https, through the dashboard domain. Install or reinstall with one:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/aelpxy/bird/main/install.sh | bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/chokhu-hq/bird/main/install.sh | bash -s -- \
   --acme-email you@example.com --dashboard-domain bird.example.com
 ```
 
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: aelpxy/bird@main
+      - uses: chokhu-hq/bird@main
         with:
           api: https://bird.example.com
           token: ${{ secrets.BIRD_TOKEN }}

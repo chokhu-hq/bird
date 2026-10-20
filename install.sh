@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Installs or upgrades bird for the current user, then starts it.
 #
-#   curl -fsSL https://raw.githubusercontent.com/aelpxy/bird/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/chokhu-hq/bird/main/install.sh | bash
 #   curl -fsSL .../install.sh | bash -s -- --acme-email you@x.com
 #
 #   --acme-email <email>   also get Let's Encrypt certificates
@@ -15,8 +15,8 @@
 # otherwise it only asks for sudo to install podman and to let your user bind ports 80 and 443.
 set -euo pipefail
 
-github="https://github.com/aelpxy/bird"
-script_url="https://raw.githubusercontent.com/aelpxy/bird/main/install.sh"
+github="https://github.com/chokhu-hq/bird"
+script_url="https://raw.githubusercontent.com/chokhu-hq/bird/main/install.sh"
 service_user="bird"
 args=("$@")
 bin_dir="$HOME/.local/bin"

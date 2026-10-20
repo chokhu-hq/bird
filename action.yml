@@ -50,7 +50,7 @@ runs:
         dir="$RUNNER_TEMP/bird-install"
         mkdir -p "$dir"
         cd "$dir"
-        base="https://github.com/aelpxy/bird/releases/download/$VERSION"
+        base="https://github.com/chokhu-hq/bird/releases/download/$VERSION"
         curl -fsSLO "$base/$name.tar.gz"
         curl -fsSLO "$base/$name.tar.gz.sha256"
         sha256sum -c "$name.tar.gz.sha256"

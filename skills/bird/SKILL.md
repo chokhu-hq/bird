@@ -48,7 +48,7 @@ If `bird` is missing, install the CLI (Linux or macOS, x86_64 or aarch64):
 
 ```sh
 name="bird-$(uname -m | sed 's/arm64/aarch64/')-$(uname -s | sed 's/Darwin/macos/; s/Linux/linux/')"
-curl -fsSL "https://github.com/aelpxy/bird/releases/download/edge/$name.tar.gz" | tar -xz
+curl -fsSL "https://github.com/chokhu-hq/bird/releases/download/edge/$name.tar.gz" | tar -xz
 mkdir -p ~/.local/bin && install -m 0755 "$name/bird" ~/.local/bin/bird
 ```
 
